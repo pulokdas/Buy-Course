@@ -1,0 +1,66 @@
+[
+    {
+      "img": "https://i.imgur.com/2o3Luek.png",
+      "title": "Introduction to C Programming",
+      "description": "This course provides a comprehensive introduction to the fundamentals of C programming language, including data types, control structures, functions, and memory management.",
+      "price": "$49.99",
+      "credit_hour": 3
+    },
+    {
+      "img": "https://i.imgur.com/u1oQdzB.png",
+      "title": "Introduction to Algorithms",
+      "description": "Explore the essential algorithms and data structures used in computer science, and learn algorithm design techniques to solve complex problems efficiently.",
+      "price": "$59.99",
+      "credit_hour": 4
+    },
+    {
+      "img": "https://i.imgur.com/UklJ7qV.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "Get acquainted with C++ programming and its applications in data structures and algorithms (DSA), covering concepts like classes, objects, and pointers.",
+      "price": "$54.99",
+      "credit_hour": 3
+    },
+    {
+      "img": "https://i.imgur.com/6PI2Gq7.png",
+      "title": "Basic Data Structures",
+      "description": "Master the foundational data structures such as arrays, linked lists, stacks, and queues, which are essential for efficient algorithm implementation.",
+      "price": "$39.99",
+      "credit_hour": 2
+    },
+    {
+      "img": "https://i.imgur.com/sngqGLS.png",
+      "title": "Introduction to OOP Python",
+      "description": "Learn the principles of Object-Oriented Programming (OOP) in Python, covering classes, inheritance, polymorphism, and encapsulation.",
+      "price": "$49.99",
+      "credit_hour": 3
+    },
+    {
+      "img": "https://i.imgur.com/iVGaMPR.png",
+      "title": "Software Engineering",
+      "description": "Dive into the principles and practices of software engineering, including software development methodologies, project management, and quality assurance.",
+      "price": "$69.99",
+      "credit_hour": 4
+    },
+    {
+      "img": "https://i.imgur.com/KNCtcMc.png",
+      "title": "AWS, Cloud Computing",
+      "description": "Explore Amazon Web Services (AWS) and cloud computing concepts, including cloud infrastructure, services, and deployment strategies.",
+      "price": "$79.99",
+      "credit_hour": 5
+    },
+    {
+      "img": "https://i.imgur.com/wdPEaju.png",
+      "title": "Database (MySQL)",
+      "description": "Gain proficiency in MySQL, a popular relational database management system (RDBMS), covering database design, SQL queries, and administration.",
+      "price": "$59.99",
+      "credit_hour": 4
+    },
+    {
+      "img": "https://i.imgur.com/rhPahkV.png",
+      "title": "Problem-Solving Part",
+      "description": "Enhance your problem-solving skills with a focus on algorithmic thinking, coding challenges, and strategies to tackle complex programming problems.",
+      "price": "$44.99",
+      "credit_hour": 3
+    }
+]
+  
