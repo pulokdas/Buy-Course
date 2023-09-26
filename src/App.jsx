@@ -2,6 +2,9 @@ import './App.css'
 import Cart from './components/Cart'
 import Cards from './components/Cards'
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   const [credit, setCresit] = useState(0);
@@ -24,21 +27,36 @@ function App() {
         setSelectedCards((prevSelectedCards) => [...prevSelectedCards, data.title]);
         setprices(newPrice);
 
+      } else {
+        toast.error('You can not take more the 20hr Credit', {
+          position: 'top-right',
+          autoClose: 6000,
+        });
       }
+
+
+
+
+
+    }
+    else {
+      // Show a toast notification for selecting a course twice
+      toast.error('This course has already been selected!', {
+        position: 'top-right',
+        autoClose: 6000, //  6 seconds
+      });
 
 
 
     }
 
 
-
-
   }
   console.log(selectedCards);
   return (
-    <>
+    <div className="bg-[#f3f3f3]">
 
-      <h1 className="text-4xl text-center font-bold">Course Registration</h1>
+      <h1 className="text-4xl text-center font-bold mb-6">Course Registration</h1>
       <div className="w-11/12 mx-auto flex">
         <div className="w-9/12">
 
@@ -49,7 +67,8 @@ function App() {
         </div>
 
       </div>
-    </>
+      <ToastContainer />
+    </div>
   )
 }
 
