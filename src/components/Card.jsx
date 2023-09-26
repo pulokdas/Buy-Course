@@ -5,7 +5,7 @@ export default function Card({data,handleSelectButton}) {
   return (
 
 
-    <div className="max-w-sm w-80  bg-white border border-gray-200 rounded-lg shadow">
+    <div className="max-w-sm   bg-white border border-gray-200 rounded-lg shadow">
       <div className="px-5 pt-4">
 
         <img className="rounded-t-lg " src={img} alt="" />

@@ -57,7 +57,7 @@ function App() {
     <div className="bg-[#f3f3f3]">
 
       <h1 className="text-4xl text-center font-bold mb-6">Course Registration</h1>
-      <div className="w-11/12 mx-auto flex">
+      <div className="w-11/12 mx-auto flex flex-col-reverse lg:flex-row gap-4">
         <div className="w-9/12">
 
           <Cards handleSelectButton={handleSelectButton}></Cards>
