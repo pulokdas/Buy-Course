@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export default function Cart({credit,price,remainingHour,selectedCards}) {
    
   return (
-    <div className="max-w-sm w-80  bg-white border border-gray-200 rounded-lg shadow">
+    <div className="max-w-sm w-80  bg-white border border-gray-200 rounded-lg shadow sticky top-0">
     
 
     <div className="p-5 space-y-4">

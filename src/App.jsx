@@ -5,7 +5,7 @@ import { useState } from 'react';
 function App() {
 
   const [credit, setCresit] = useState(0);
-  const [price, setprice] = useState(0);
+  const [prices, setprices] = useState(0);
   const [remainingHour, setRemaining] = useState(20);
   const [selectedCards, setSelectedCards] = useState([]);
 
@@ -14,15 +14,23 @@ function App() {
     const isCardSelected = selectedCards.some((card) => card === data.title);
 
 
-    if (!isCardSelected) {
-      setSelectedCards((prevSelectedCards) => [...prevSelectedCards, data.title]);
+    if (!isCardSelected && credit <= 20) {
       const newcredit = credit + credit_hour;
-      setCresit(newcredit);
-      const newRemaining = remainingHour-credit_hour;
-      setRemaining(newRemaining);
+      const newRemaining = remainingHour - credit_hour;
+      const newPrice = prices + parseFloat(price);
+      if (newcredit <= 20) {
+        setCresit(newcredit);
+        setRemaining(newRemaining);
+        setSelectedCards((prevSelectedCards) => [...prevSelectedCards, data.title]);
+        setprices(newPrice);
+
+      }
+
+
+
     }
 
-    
+
 
 
   }
@@ -36,8 +44,8 @@ function App() {
 
           <Cards handleSelectButton={handleSelectButton}></Cards>
         </div>
-        <div>
-          <Cart credit={credit} price={price} remainingHour={remainingHour} selectedCards={selectedCards}></Cart>
+        <div >
+          <Cart credit={credit} price={prices} remainingHour={remainingHour} selectedCards={selectedCards}></Cart>
         </div>
 
       </div>
