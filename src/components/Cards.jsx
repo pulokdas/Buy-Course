@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from './card';
 // import '../data.json';
-export default function Cards() {
+export default function Cards({handleSelectButton}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -12,14 +12,14 @@ export default function Cards() {
         setData(data);
 
       })
-    console.log(data);
+    
   }, [])
   
 
   return (
     <div className="grid grid-cols-3 gap-8">
       {data.map((card) => (
-        <Card key={card.id} data={card}  />
+        <Card key={card.id} data={card} handleSelectButton={handleSelectButton}  />
       ))}
     </div>
   )

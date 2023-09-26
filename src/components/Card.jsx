@@ -1,7 +1,7 @@
-export default function Card(props) {
+export default function Card({data,handleSelectButton}) {
   // console.log(props.data);
-  const {title,img,description,price,credit_hour}= props.data;
-  console.log(title);
+  const {title,img,description,price,credit_hour}= data;
+  
   return (
 
 
@@ -27,7 +27,7 @@ export default function Card(props) {
           </div>
 
         </div>
-        <button href="#" class="w-full  px-3 py-2 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+        <button type="button" onClick={()=>handleSelectButton(data)} href="#" class="w-full  px-3 py-2 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
           Select
 
         </button>
